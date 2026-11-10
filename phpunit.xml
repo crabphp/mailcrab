@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="true" cacheDirectory=".phpunit.cache" failOnWarning="true">
+  <testsuites><testsuite name="Mailcrab"><directory>tests</directory></testsuite></testsuites>
+  <php>
+    <env name="APP_KEY" value="test-only-000000000000000000000000000000000000000000000000000000" force="true"/>
+    <env name="APP_DEBUG" value="false" force="true"/>
+    <env name="DB_DSN" value="sqlite::memory:"/>
+    <env name="DB_USERNAME" value="root"/>
+    <env name="DB_PASSWORD" value=""/>
+    <env name="CACHE_STORE" value="array" force="true"/>
+    <env name="LOG_PATH" value="php://memory" force="true"/>
+    <env name="DELIVERY_PROVIDER" value="fake" force="true"/>
+    <env name="FAKE_WEBHOOK_SECRET" value="test-feedback-secret-0000000000000000" force="true"/>
+  </php>
+</phpunit>

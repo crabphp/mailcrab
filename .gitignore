@@ -1,0 +1,17 @@
+/vendor/
+.env
+.env.*
+!.env.example
+/auth.json
+/storage/*
+!/storage/.gitkeep
+/dashboard/node_modules/
+/public/assets/
+/public/index.html
+/.phpunit.cache/
+/dashboard/*.tsbuildinfo
+/dashboard/dist/
+/dashboard/.vite/
+/dashboard/.cache/
+/dashboard/test-results/
+/dashboard/playwright-report/
